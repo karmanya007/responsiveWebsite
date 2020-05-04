@@ -1,3 +1,4 @@
+/* '*' sets the properties in it globally */
 * {
 	margin: 0px;
 	padding: 0px;
@@ -5,15 +6,32 @@
 }
 
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Archivo', sans-serif;
+}
+/* Way around to set the opacity of the background images' opacity. Create a div with a class attached to it and use ':before' to alter the contents of the div */
+.myDiv {
+	position: relative;
+	z-index: 1;
+}
+
+.myDiv:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(./img/seamless-curved-diamond-pattern-2.svg) center center;
+	opacity: .05;
 }
 button {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Archivo', sans-serif;
 }
 
 header {
 	display: flex;
-	width: 90%;
+	width: 85%;
 	height: 10vh;
 	margin: auto;
 	align-items: center;
@@ -28,10 +46,12 @@ header {
 .logo-container {
 	flex: 1;
 }
+
 .logo {
-	font-weight: 400;
+	font-weight: 500;
 	margin: 5px;
 }
+
 nav {
 	flex: 2;
 }
@@ -40,8 +60,9 @@ nav {
 	list-style: none;
 }
 .nav-link {
-	color: #5f5f79;
+	color: black;
 	font-size: 18px;
+	font-weight: 100;
 	text-decoration: none;
 }
 .cart {
@@ -60,94 +81,63 @@ nav {
 	flex: 1;
 }
 .intro-text h1 {
-	font-size: 44px;
+	font-size: 50px;
 	font-weight: 500;
-	background: linear-gradient(to right, #494964, #6f6f89);
-	-webkit-background-clip: text;
+	background: linear-gradient(to right, black, #494964);
+	-webkit-background-clip: text; /* To apply the gradient to the text only */
 	-webkit-text-fill-color: transparent;
 }
 .intro-text p {
 	margin-top: 5px;
 	font-size: 22px;
-	color: #585772;
+	color: rgba(0, 0, 0, 0.801);
 }
 .cta {
 	padding: 50px 0px 0px 0px;
 }
 .cta-select {
-	border: 2px solid #c36cbb;
-	background: transparent;
-	color: #c36cbb;
+	margin: 0px 30px 0px 0px;
+	border: 2px solid #8de6d2;
+	background: white;
+	color: #49ada8;
+	font-size: 16px;
+	font-weight: 500;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
-	font-size: 16px;
 }
 .cta-add {
-	background: #c36cbb;
+	margin: 30px 0px 0px 0px;
+	background: #49ada8;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
-	font-size: 16px;
 	border: none;
-	color: white;
-	margin: 30px 0px 0px 30px;
 }
 
 .cover {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	height: 60vh;
+	flex: .6;
 }
-.cover img {
-	height: 100%;
-	filter: drop-shadow(0px 5px 3px black);
-	animation: drop 1.5s ease;
-}
-
-.big-circle {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	z-index: -1;
-	opacity: 0.5;
-	height: 80%;
-}
-.medium-circle {
-	position: absolute;
-	top: 30%;
-	right: 30%;
-	z-index: -1;
-	height: 60%;
-	opacity: 0.4;
-}
-.small-circle {
-	position: absolute;
-	bottom: 0%;
-	left: 20%;
-	z-index: -1;
-}
-
-.laptop-select {
-	width: 15%;
-	display: flex;
-	justify-content: space-around;
-	position: absolute;
-	right: 20%;
-}
-
-@keyframes drop {
-	0% {
+/* Animation to fade in */
+@keyframes fade {
+	from {
 		opacity: 0;
-		transform: translateY(-80px);
 	}
-	100% {
+	to {
 		opacity: 1;
-		transform: translateY(0px);
 	}
 }
 
+.cover img {
+	height: 89.6vh;
+	filter: drop-shadow(0px 10px 400px black);
+	animation-name: fade;
+	animation-duration: 3s;
+}
+/* Mobile optimization */
 @media screen and (max-width: 1024px) {
 	.presentation {
 		flex-direction: column;
@@ -164,19 +154,5 @@ nav {
 	}
 	.cta {
 		padding: 10px 0px 0px 0px;
-	}
-	.laptop-select {
-		bottom: 5%;
-		right: 50%;
-		width: 50%;
-		transform: translate(50%, 5%);
-	}
-	.cover img {
-		height: 80%;
-	}
-	.small-circle,
-	.medium-circle,
-	.big-circle {
-		opacity: 0.2;
 	}
 }

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Layer_1" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2599.9761 1600"
+	 enable-background="new 0 0 2599.9761 1600" xml:space="preserve">
+<pattern  y="1600" width="100" height="100" patternUnits="userSpaceOnUse" id="New_Pattern_2" viewBox="50 -150 100 100" overflow="visible">
+	<g>
+		<polygon fill="none" points="50,-150 150,-150 150,-50 50,-50 		"/>
+		<g id="Layer_x0020_1_9_">
+			<path d="M100-50L100-50c27.5862,0,50,22.4138,50,50l0,0c0-27.5862,22.6054-50,50-50l0,0c-27.3946,0-50-22.4138-50-50l0,0
+				C150-72.4138,127.5862-50,100-50z"/>
+		</g>
+		<g id="Layer_x0020_1_8_">
+			<path d="M0-50L0-50c27.5862,0,50,22.4138,50,50l0,0c0-27.5862,22.6054-50,50-50l0,0c-27.3946,0-50-22.4138-50-50l0,0
+				C50-72.4138,27.5862-50,0-50z"/>
+		</g>
+		<g id="Layer_x0020_1_7_">
+			<path d="M50-100L50-100c27.5862,0,50,22.4138,50,50l0,0c0-27.5862,22.6054-50,50-50l0,0c-27.3946,0-50-22.4138-50-50l0,0
+				C100-122.4138,77.5862-100,50-100z"/>
+		</g>
+		<g id="Layer_x0020_1_6_">
+			<path d="M100-150L100-150c27.5862,0,50,22.4138,50,50l0,0c0-27.5862,22.6054-50,50-50l0,0c-27.3946,0-50-22.4138-50-50l0,0
+				C150-172.4138,127.5862-150,100-150z"/>
+		</g>
+		<g id="Layer_x0020_1_5_">
+			<path d="M0-150L0-150c27.5862,0,50,22.4138,50,50l0,0c0-27.5862,22.6054-50,50-50l0,0c-27.3946,0-50-22.4138-50-50l0,0
+				C50-172.4138,27.5862-150,0-150z"/>
+		</g>
+	</g>
+</pattern>
+<rect fill="url(#New_Pattern_2)" width="2599.9761" height="1600"/>
+</svg>
